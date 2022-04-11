@@ -14,18 +14,18 @@ function listing(type,list){
 
 function getColor(){
     var colors = [
-        '#16a085',
-        '#27ae60',
-        '#2c3e50',
-        '#f39c12',
-        '#e74c3c',
-        '#9b59b6',
-        '#FB6964',
-        '#342224',
-        '#472E32',
-        '#BDBB99',
-        '#77B1A9',
-        '#73A857'];
+        '#7BB5A2',
+        '#A0C3A9',
+        '#A18B69',
+        '#EDAB73',
+        '#E5D092',
+        '#446072',
+        '#B2A68D',
+        '#7297A0',
+        '#54738E',
+        '#82AC7C',
+        '#9DBA94'
+    ];
     
     return colors[randomizeInt(0,colors.length-1)];
 }
@@ -82,6 +82,5 @@ $( document ).ready(function(){
         setType();
         changeText();
         $(this).html(type[0].toUpperCase() + type.substring(1));
-        alert('hooa');
     });
 });
